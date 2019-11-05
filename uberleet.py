@@ -255,7 +255,7 @@ class Tetris:
 
                 piece_count += 1
 
-            except IndexError:
+            except:
                 if render:
                     print("GAME OVER")
                     print("Combos: ", combos)
@@ -265,10 +265,7 @@ class Tetris:
 
 def main():
     try:
-        with open(
-            build_absolute_path("learning/deap/pso/downstack/current_generation_dump"),
-            "rb",
-        ) as dump_file:
+        with open("current_generation_dump", "rb") as dump_file:
             dump = pickle.load(dump_file)
             current_generation = dump[0]
             n = current_generation[0]

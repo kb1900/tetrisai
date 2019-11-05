@@ -3,11 +3,11 @@ max_bpm_peak = (
     250
 )  # The bpm will be variable but never peak above this due to time tracking and delays in main.py
 move_depth = (
-    12
+    36
 )  # The top moves from the current piece that will be used first to check second piece. Minimum value 1, maximum value 34.
 max_nodes = float(
-    "inf"
-)  # The maximum number of nodes (boards) that will be scored in total. Minimum value 1, maximum value 35 * 35
+    1296
+)  # The maximum number of nodes (boards) that will be scored in total. Minimum value 1, maximum value 36 * 36
 
 mode = "downstack"
 
